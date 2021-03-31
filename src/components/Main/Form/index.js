@@ -1,5 +1,5 @@
 import Input from '../../Elements/Input';
-import TextArea from './TextArea';
+import TextArea from '../../Elements/TextArea';
 import Checkbox from './Checkbox';
 import Button from '../../Elements/Button';
 
