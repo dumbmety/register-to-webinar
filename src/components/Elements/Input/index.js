@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './index.css';
 
 const Input = ({ title, type, name, placeholder }) => {
@@ -7,6 +9,13 @@ const Input = ({ title, type, name, placeholder }) => {
       <input id={name} name={name} type={type} placeholder={placeholder} />
     </div>
   );
+};
+
+Input.propTypes = {
+  title: PropTypes.string,
+  type: PropTypes.string,
+  name: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
 export default Input;

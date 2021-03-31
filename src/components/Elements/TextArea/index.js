@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './index.css';
 
 const TextArea = ({ title, name, placeholder }) => {
@@ -7,6 +9,12 @@ const TextArea = ({ title, name, placeholder }) => {
       <textarea id={name} name={name} placeholder={placeholder} />
     </div>
   );
+};
+
+TextArea.propTypes = {
+  title: PropTypes.string,
+  name: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
 export default TextArea;

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './index.css';
 
 const Checkbox = ({ name, message }) => {
@@ -7,6 +9,11 @@ const Checkbox = ({ name, message }) => {
       <label htmlFor={name}>{message}</label>
     </div>
   );
+};
+
+Checkbox.propTypes = {
+  name: PropTypes.string,
+  message: PropTypes.string,
 };
 
 export default Checkbox;
