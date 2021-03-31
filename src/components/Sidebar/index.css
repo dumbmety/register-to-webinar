@@ -6,6 +6,6 @@
 }
 #sidebar > div {
   position: fixed;
-  top: 50%;
+  top: 20%;
   padding: 0 5rem;
 }

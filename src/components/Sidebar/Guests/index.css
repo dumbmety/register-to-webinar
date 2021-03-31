@@ -1,0 +1,13 @@
+#guests {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+#guests ul {
+  margin-top: 1rem;
+}
+#guests li {
+  margin-bottom: 1rem;
+}
+#guests li:last-child {
+  margin-bottom: 0;
+}
