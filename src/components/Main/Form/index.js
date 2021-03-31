@@ -1,7 +1,7 @@
 import Input from './Input';
 import TextArea from './TextArea';
 import Checkbox from './Checkbox';
-import Button from './Button';
+import Button from '../../Elements/Button';
 
 import './index.css';
 
