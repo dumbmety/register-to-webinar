@@ -1,12 +1,34 @@
-.form-control {
+.checkbox {
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
 }
-.form-control .checkbox {
-  width: auto;
-  display: inline;
-  margin-right: 0.5rem;
-}
-.form-control .checkbox + label {
+
+.checkbox input + label {
   user-select: none;
   cursor: pointer;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+.checkbox input {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #464856;
+}
+
+.checkbox input::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox input:checked {
+  background: #464856;
 }

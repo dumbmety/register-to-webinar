@@ -4,7 +4,8 @@
 .form-control label {
   line-height: 1.625rem;
 }
-.form-control input {
+.form-control input[type='text'],
+.form-control input[type='email'] {
   margin-top: 0.2rem;
   width: 100%;
   display: block;
