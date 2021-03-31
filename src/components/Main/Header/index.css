@@ -1,14 +1,12 @@
 #main-header {
   margin-bottom: 3rem;
 }
-#main-header time {
-  display: inline-block;
-}
+
 #main-header h1 {
-  font-size: 2rem;
   line-height: 2.625rem;
   margin: 0.8rem 0;
 }
+
 #main-header p {
   font-size: 1.125rem;
   line-height: 1.75rem;

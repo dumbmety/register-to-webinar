@@ -1,6 +1,6 @@
 import Heading from '../../Elements/Heading';
-import Time from '../../Elements/Time';
 import Paragraph from '../../Elements/Paragraph';
+import Time from '../../Elements/Time';
 
 import './index.css';
 
