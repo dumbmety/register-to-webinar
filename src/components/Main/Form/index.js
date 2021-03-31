@@ -1,4 +1,4 @@
-import Input from './Input';
+import Input from '../../Elements/Input';
 import TextArea from './TextArea';
 import Checkbox from './Checkbox';
 import Button from '../../Elements/Button';
