@@ -1,9 +1,13 @@
+import checkLang from '../../../helpers/check-lang';
+
 import './index.css';
 
 const Share = () => {
+  const language = checkLang();
+
   return (
     <section id="share">
-      <span>Share</span>
+      <span>{language === 'english' ? 'Share' : 'به اشتراک گذاری'}</span>
       <ul>
         <li>
           <a href="https://twitter.com/neysidev">

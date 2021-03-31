@@ -15,6 +15,10 @@
 #share a:first-child {
   padding-left: 0;
 }
+html[dir='rtl'] #share a:first-child {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
 #share svg {
   fill: #ffffff;
 }

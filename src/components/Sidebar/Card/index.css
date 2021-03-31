@@ -7,3 +7,7 @@
   height: 3rem;
   margin-right: 1rem;
 }
+html[dir='rtl'] .card img {
+  margin-right: 0;
+  margin-left: 1rem;
+}

@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/vazir-font/27.2.2/font-face.css');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
@@ -6,6 +7,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+html[dir='rtl'] > body {
+  font-family: 'Vazir';
 }
 body {
   color: #ffffff;
@@ -16,6 +20,11 @@ h1,
 h2,
 h3 {
   font-family: Merriweather;
+}
+html[dir='rtl'] h1,
+html[dir='rtl'] h2,
+html[dir='rtl'] h3 {
+  font-family: 'Vazir';
 }
 
 /* Responsive */
@@ -38,6 +47,10 @@ h3 {
   }
   .register-form__group > div:first-child {
     margin-right: 1rem;
+  }
+  html[dir='rtl'] .register-form__group > div:first-child {
+    margin-right: 0;
+    margin-left: 1rem;
   }
 }
 @media (min-width: 992px) {
