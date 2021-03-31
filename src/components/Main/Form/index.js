@@ -1,6 +1,6 @@
 import Input from '../../Elements/Input';
 import TextArea from '../../Elements/TextArea';
-import Checkbox from './Checkbox';
+import Checkbox from '../../Elements/Checkbox';
 import Button from '../../Elements/Button';
 
 import './index.css';
