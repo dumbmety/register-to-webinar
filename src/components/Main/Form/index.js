@@ -1,8 +1,8 @@
+import Button from '../../Elements/Button';
+import Checkbox from '../../Elements/Checkbox';
+import Heading from '../../Elements/Heading';
 import Input from '../../Elements/Input';
 import TextArea from '../../Elements/TextArea';
-import Checkbox from '../../Elements/Checkbox';
-import Button from '../../Elements/Button';
-import Heading from '../../Elements/Heading';
 
 import './index.css';
 

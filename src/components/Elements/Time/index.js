@@ -6,7 +6,7 @@ const Time = ({ dateTime, children }) => {
 
 Time.propTypes = {
   dateTime: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.string,
 };
 
 export default Time;
