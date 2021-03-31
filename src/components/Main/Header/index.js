@@ -1,6 +1,6 @@
 import './index.css';
 
-export default function Header() {
+const Header = () => {
   return (
     <header id="main-header">
       <time dateTime="2021-03-17T12:00">March 17, 2021 12:00</time>
@@ -12,4 +12,6 @@ export default function Header() {
       </p>
     </header>
   );
-}
+};
+
+export default Header;

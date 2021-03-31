@@ -3,7 +3,7 @@ import Form from './Form';
 
 import './index.css';
 
-export default function Main() {
+const Main = () => {
   return (
     <main id="main-content">
       <div>
@@ -12,4 +12,6 @@ export default function Main() {
       </div>
     </main>
   );
-}
+};
+
+export default Main;

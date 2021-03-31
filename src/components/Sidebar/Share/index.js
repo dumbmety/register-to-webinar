@@ -1,6 +1,6 @@
 import './index.css';
 
-export default function Share() {
+const Share = () => {
   return (
     <section id="share">
       <span>Share</span>
@@ -30,4 +30,6 @@ export default function Share() {
       </ul>
     </section>
   );
-}
+};
+
+export default Share;

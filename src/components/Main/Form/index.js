@@ -5,7 +5,7 @@ import Button from '../../Elements/Button';
 
 import './index.css';
 
-export default function Form() {
+const Form = () => {
   return (
     <div>
       <h2>Join the event</h2>
@@ -45,4 +45,6 @@ export default function Form() {
       </form>
     </div>
   );
-}
+};
+
+export default Form;

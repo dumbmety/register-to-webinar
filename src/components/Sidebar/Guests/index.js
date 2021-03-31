@@ -2,7 +2,7 @@ import Card from '../Card';
 
 import './index.css';
 
-export default function Guests() {
+const Guests = () => {
   return (
     <section id="guests">
       <h3>Guests</h3>
@@ -13,4 +13,6 @@ export default function Guests() {
       </ul>
     </section>
   );
-}
+};
+
+export default Guests;

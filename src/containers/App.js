@@ -4,7 +4,7 @@ import 'simplebar/dist/simplebar.min.css';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 
-export default function App() {
+const App = () => {
   return (
     <SimpleBar style={{ maxHeight: '100vh' }}>
       <div className="layout">
@@ -13,4 +13,6 @@ export default function App() {
       </div>
     </SimpleBar>
   );
-}
+};
+
+export default App;

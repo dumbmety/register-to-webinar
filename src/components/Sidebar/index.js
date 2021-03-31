@@ -4,7 +4,7 @@ import HostedBy from './HostedBy';
 
 import './index.css';
 
-export default function Sidebar() {
+const Sidebar = () => {
   return (
     <aside id="sidebar">
       <div>
@@ -14,4 +14,6 @@ export default function Sidebar() {
       </div>
     </aside>
   );
-}
+};
+
+export default Sidebar;

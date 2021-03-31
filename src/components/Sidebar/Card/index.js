@@ -1,6 +1,6 @@
 import './index.css';
 
-export default function Card({ name, title, image }) {
+const Card = ({ name, title, image }) => {
   return (
     <li className="card">
       <img src={`/img/${image}`} alt={name} />
@@ -10,4 +10,6 @@ export default function Card({ name, title, image }) {
       </div>
     </li>
   );
-}
+};
+
+export default Card;
