@@ -7,8 +7,10 @@ import Sidebar from '../components/Sidebar';
 export default function App() {
   return (
     <SimpleBar style={{ maxHeight: '100vh' }}>
-      <Main />
-      <Sidebar />
+      <div className="layout">
+        <Main />
+        <Sidebar />
+      </div>
     </SimpleBar>
   );
 }

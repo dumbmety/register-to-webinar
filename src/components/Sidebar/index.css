@@ -1,3 +1,11 @@
 #sidebar {
   display: none;
+  background: #2b2d38;
+  min-height: 100vh;
+  max-height: 100%;
+}
+#sidebar > div {
+  position: fixed;
+  top: 50%;
+  padding: 0 5rem;
 }

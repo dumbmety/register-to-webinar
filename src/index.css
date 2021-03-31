@@ -1,19 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
+/* Default Settings */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   color: #ffffff;
   background: #23252f;
   font-family: 'IBM Plex Sans', sans-serif;
 }
-
 h1,
 h2 {
   font-family: Merriweather;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .layout {
+    display: flex;
+  }
+  #main-content {
+    flex: 1;
+  }
+  #main-content > div {
+    margin: auto;
+    width: 560px;
+  }
+  .register-form__group {
+    display: flex;
+  }
+  .register-form__group > div {
+    flex: 1;
+  }
+  .register-form__group > div:first-child {
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  #main-content {
+    flex: 2;
+  }
+  #sidebar {
+    flex: 1;
+    display: block;
+  }
 }

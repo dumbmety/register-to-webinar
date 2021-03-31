@@ -5,9 +5,11 @@ import './index.css';
 
 export default function Main() {
   return (
-    <main className="main-content">
-      <Header />
-      <Form />
+    <main id="main-content">
+      <div>
+        <Header />
+        <Form />
+      </div>
     </main>
   );
 }
