@@ -1,6 +1,7 @@
 {
   "name": "register-to-webinar",
   "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
