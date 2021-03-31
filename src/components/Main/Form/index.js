@@ -2,13 +2,14 @@ import Input from '../../Elements/Input';
 import TextArea from '../../Elements/TextArea';
 import Checkbox from '../../Elements/Checkbox';
 import Button from '../../Elements/Button';
+import Heading from '../../Elements/Heading';
 
 import './index.css';
 
 const Form = () => {
   return (
     <div>
-      <h2>Join the event</h2>
+      <Heading type="h2">Join the event</Heading>
       <form id="register-form">
         <div className="register-form__group">
           <Input
