@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-
 import './index.css';
 
 const Button = ({ children }) => {
-  return <button className="btn-light">{children}</button>;
+  return <button className="button">{children}</button>;
 };
 
 Button.propTypes = {
