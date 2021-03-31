@@ -1,0 +1,12 @@
+.form-control {
+  margin-bottom: 1rem;
+}
+.form-control .checkbox {
+  width: auto;
+  display: inline;
+  margin-right: 0.5rem;
+}
+.form-control .checkbox + label {
+  user-select: none;
+  cursor: pointer;
+}

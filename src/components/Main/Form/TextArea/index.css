@@ -1,0 +1,26 @@
+.form-control {
+  margin-bottom: 1rem;
+}
+.form-control label {
+  line-height: 1.625rem;
+}
+.form-control textarea {
+  margin-top: 0.2rem;
+  width: 100%;
+  display: block;
+  background: transparent;
+  border: 1px solid #464856;
+  padding: 1rem 1.5rem;
+  outline: none;
+  color: #ffffff;
+  font: inherit;
+  resize: none;
+  height: 6rem;
+}
+.form-control textarea::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.form-control textarea:focus {
+  border-color: #5e5f63;
+}

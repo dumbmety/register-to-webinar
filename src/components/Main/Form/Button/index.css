@@ -1,0 +1,11 @@
+.btn-light {
+  background: #ffffff;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1.2rem 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
