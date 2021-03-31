@@ -7,7 +7,7 @@ const Heading = ({ type, children }) => {
 
 Heading.propTypes = {
   type: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.string,
 };
 
 export default Heading;
