@@ -1,11 +1,12 @@
 import Heading from '../../Elements/Heading';
+import Time from '../../Elements/Time';
 
 import './index.css';
 
 const Header = () => {
   return (
     <header id="main-header">
-      <time dateTime="2021-03-17T12:00">March 17, 2021 12:00</time>
+      <Time dateTime="2021-03-17T12:00">March 17, 2021 12:00</Time>
       <Heading type="h1">The help of Augmented Reality and Holograms.</Heading>
       <p>
         Use Augmented Reality to keep students engaged and provide detailed explanations of models
