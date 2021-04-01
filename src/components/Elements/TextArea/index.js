@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
+import { injectIntl, FormattedMessage } from 'react-intl';
 
 import './index.css';
 
-const TextArea = ({ title, name, placeholder }) => {
+const TextArea = ({ title, name, placeholder, intl }) => {
   return (
     <div className="form-control">
       <label htmlFor={name}>
         <FormattedMessage id={title} />
       </label>
-      <textarea id={name} name={name} placeholder={placeholder} />
+      <textarea id={name} name={name} placeholder={intl.formatMessage({ id: placeholder })} />
     </div>
   );
 };
@@ -20,4 +20,4 @@ TextArea.propTypes = {
   placeholder: PropTypes.string,
 };
 
-export default TextArea;
+export default injectIntl(TextArea);

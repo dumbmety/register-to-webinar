@@ -1,4 +1,3 @@
-import { FormattedMessage } from 'react-intl';
 import Button from '../../Elements/Button';
 import Checkbox from '../../Elements/Checkbox';
 import Heading from '../../Elements/Heading';
@@ -44,11 +43,7 @@ const Form = () => {
             placeholder="companySizePlaceholder"
           />
         </div>
-        <TextArea
-          title="formMessage"
-          name="message"
-          placeholder={<FormattedMessage id="formMessagePlaceholder" />}
-        />
+        <TextArea title="formMessage" name="message" placeholder="formMessagePlaceholder" />
         <Checkbox name="receiveEmails" message="receiveEmails" />
         <Button id="registerButton" />
       </form>

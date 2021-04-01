@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
+import { injectIntl, FormattedMessage } from 'react-intl';
 
 import './index.css';
 
-const Input = ({ title, type, name, placeholder }) => {
+const Input = ({ title, type, name, placeholder, intl }) => {
   return (
     <div className="form-control">
       <label htmlFor={name}>
@@ -13,7 +13,7 @@ const Input = ({ title, type, name, placeholder }) => {
         id={name}
         name={name}
         type={type}
-        placeholder={<FormattedMessage id={placeholder} />}
+        placeholder={intl.formatMessage({ id: placeholder })}
       />
     </div>
   );
@@ -26,4 +26,4 @@ Input.propTypes = {
   placeholder: PropTypes.string,
 };
 
-export default Input;
+export default injectIntl(Input);
