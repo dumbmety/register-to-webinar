@@ -4,12 +4,14 @@
 
 #main-footer a {
   color: #ffffff;
+  opacity: 0.8;
   text-decoration: none;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
+  font-size: 0.8rem;
 }
 
 html[dir='rtl'] #main-footer a {
   display: inline-block;
   padding-right: 0;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }

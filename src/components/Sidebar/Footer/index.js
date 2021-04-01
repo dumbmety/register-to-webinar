@@ -12,6 +12,9 @@ const Footer = () => {
       <Link to="/fa">
         <FormattedMessage id="farsi" />
       </Link>
+      <Link to="/ar">
+        <FormattedMessage id="arabic" />
+      </Link>
     </footer>
   );
 };
