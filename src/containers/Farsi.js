@@ -5,10 +5,11 @@ import SimpleBar from 'simplebar-react';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 
-const Farsi = () => {
+const Farsi = ({ changeLang }) => {
   useEffect(() => {
     document.querySelector('html').dir = 'rtl';
-  }, []);
+    changeLang('fa');
+  });
 
   return (
     <>

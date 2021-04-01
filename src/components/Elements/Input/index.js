@@ -1,12 +1,20 @@
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 
 import './index.css';
 
 const Input = ({ title, type, name, placeholder }) => {
   return (
     <div className="form-control">
-      <label htmlFor={name}>{title}</label>
-      <input id={name} name={name} type={type} placeholder={placeholder} />
+      <label htmlFor={name}>
+        <FormattedMessage id={title} />
+      </label>
+      <input
+        id={name}
+        name={name}
+        type={type}
+        placeholder={<FormattedMessage id={placeholder} />}
+      />
     </div>
   );
 };

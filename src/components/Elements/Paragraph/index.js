@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 
-const Paragraph = ({ children }) => {
-  return <p>{children}</p>;
+const Paragraph = ({ id }) => {
+  return (
+    <p>
+      <FormattedMessage id={id} />
+    </p>
+  );
 };
 
 Paragraph.propTypes = {
-  children: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default Paragraph;

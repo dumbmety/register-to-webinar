@@ -5,10 +5,11 @@ import SimpleBar from 'simplebar-react';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 
-const English = () => {
+const English = ({ changeLang }) => {
   useEffect(() => {
     document.querySelector('html').dir = 'ltr';
-  }, []);
+    changeLang('');
+  });
 
   return (
     <>

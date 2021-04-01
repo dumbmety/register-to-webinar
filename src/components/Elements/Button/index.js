@@ -1,12 +1,17 @@
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 import './index.css';
 
-const Button = ({ children }) => {
-  return <button className="button">{children}</button>;
+const Button = ({ id }) => {
+  return (
+    <button className="button">
+      <FormattedMessage id={id} />
+    </button>
+  );
 };
 
 Button.propTypes = {
-  children: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default Button;

@@ -1,13 +1,12 @@
-import checkLang from '../../../helpers/check-lang';
-
+import { FormattedMessage } from 'react-intl';
 import './index.css';
 
 const Share = () => {
-  const language = checkLang();
-
   return (
     <section id="share">
-      <span>{language === 'english' ? 'Share' : 'به اشتراک گذاری'}</span>
+      <span>
+        <FormattedMessage id="share" />
+      </span>
       <ul>
         <li>
           <a href="https://twitter.com/neysidev">

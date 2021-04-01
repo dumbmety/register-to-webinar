@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 
 import './index.css';
 
@@ -6,7 +7,9 @@ const Checkbox = ({ name, message }) => {
   return (
     <div className="checkbox">
       <input id={name} type="checkbox" name={name} />
-      <label htmlFor={name}>{message}</label>
+      <label htmlFor={name}>
+        <FormattedMessage id={message} />
+      </label>
     </div>
   );
 };
