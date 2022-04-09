@@ -4,4 +4,5 @@ import App from "./containers/App"
 import "simplebar/dist/simplebar.min.css"
 import "./index.css"
 
-ReactDOM.render(<App />, document.getElementById("app"))
+const container = document.getElementById("app")
+ReactDOM.render(<App />, container)
