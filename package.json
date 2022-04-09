@@ -1,6 +1,6 @@
 {
   "name": "register-to-webinar",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
@@ -22,6 +22,9 @@
     "simplebar-react": "^2.3.0",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,8 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "prop-types": "^15.7.2"
   }
 }
