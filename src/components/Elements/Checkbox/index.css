@@ -12,7 +12,7 @@
 .checkbox input {
   margin-right: 0.5rem;
 }
-html[dir='rtl'] .checkbox input {
+html[dir="rtl"] .checkbox input {
   margin-right: 0;
   margin-left: 0.5rem;
 }
@@ -27,7 +27,7 @@ html[dir='rtl'] .checkbox input {
 }
 
 .checkbox input::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

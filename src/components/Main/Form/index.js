@@ -1,16 +1,16 @@
-import Button from '../../Elements/Button';
-import Checkbox from '../../Elements/Checkbox';
-import Heading from '../../Elements/Heading';
-import Input from '../../Elements/Input';
-import TextArea from '../../Elements/TextArea';
+import Button from "../../Elements/Button"
+import Checkbox from "../../Elements/Checkbox"
+import Heading from "../../Elements/Heading"
+import Input from "../../Elements/Input"
+import TextArea from "../../Elements/TextArea"
 
-import './index.css';
+import "./index.css"
 
-const Form = () => {
+export default function Form() {
   return (
     <div>
       <Heading type="h2" id="joinTheEvent" />
-      <form id="register-form">
+      <form id="register-form" onSubmit={e => e.preventDefault()}>
         <div className="register-form__group">
           <Input
             title="firstName"
@@ -18,7 +18,12 @@ const Form = () => {
             name="firstName"
             placeholder="firstNamePlaceholder"
           />
-          <Input title="lastName" type="text" name="lastName" placeholder="lastNamePlaceholder" />
+          <Input
+            title="lastName"
+            type="text"
+            name="lastName"
+            placeholder="lastNamePlaceholder"
+          />
         </div>
         <div className="register-form__group">
           <Input
@@ -27,7 +32,12 @@ const Form = () => {
             name="email"
             placeholder="businessEmailPlaceholder"
           />
-          <Input title="jobTitle" type="text" name="jobTitle" placeholder="jobTitlePlaceholder" />
+          <Input
+            title="jobTitle"
+            type="text"
+            name="jobTitle"
+            placeholder="jobTitlePlaceholder"
+          />
         </div>
         <div className="register-form__group">
           <Input
@@ -43,12 +53,14 @@ const Form = () => {
             placeholder="companySizePlaceholder"
           />
         </div>
-        <TextArea title="formMessage" name="message" placeholder="formMessagePlaceholder" />
+        <TextArea
+          title="formMessage"
+          name="message"
+          placeholder="formMessagePlaceholder"
+        />
         <Checkbox name="receiveEmails" message="receiveEmails" />
         <Button id="registerButton" />
       </form>
     </div>
-  );
-};
-
-export default Form;
+  )
+}
